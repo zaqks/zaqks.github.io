@@ -1,0 +1,11 @@
+@import url(../widgets/skill_card/skill_card.css);
+
+
+
+.section.categ_section {
+    width: 100%;
+    gap: var(--sz7);
+}
+
+
+

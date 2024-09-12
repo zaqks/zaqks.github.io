@@ -1,0 +1,17 @@
+.section#contact {
+  
+  flex: none;
+  min-height: 100vh;
+  
+
+  justify-content: center;
+}
+
+.section#contact .section_title {
+  margin: 0 auto;
+}
+
+.section#contact .section_content {
+  width: 90%;
+  margin: 0 auto;
+}

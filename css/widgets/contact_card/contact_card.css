@@ -1,0 +1,38 @@
+.section.contact_card {
+  position: relative;
+
+  width: 100%;
+  flex-direction: column;
+
+  padding: var(--sz5);
+  border-radius: var(--sz2);
+
+  background-color: var(--bg1);
+  
+  gap: var(--sz10);
+
+  cursor: pointer;
+}
+
+.section.contact_card .section_title img {  
+  width: calc(var(--sz19));
+  aspect-ratio: 1;
+
+  margin: 0 auto;
+
+  border-radius: 50%;    
+}
+
+.section.contact_card .section_content {
+  width: 100%;  
+}
+
+.section.contact_card .section_content h2 {
+  font-size: var(--sz4);
+  margin: 0 auto;
+}
+
+.section.contact_card .section_content h1 {
+  font-size: var(--sz5);
+  margin: 0 auto;
+}

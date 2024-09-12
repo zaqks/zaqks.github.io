@@ -1,0 +1,28 @@
+@import url(../widgets/contact_card/contact_card.css);
+
+.section#home {
+  flex: none;  
+  min-height: 100vh;
+}
+
+.section#home .section_content {
+  margin: auto 0;
+
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+/******/
+
+.section#home .section_content #left h1 {
+  font-size: var(--sz15);
+}
+.section#home .section_content #left h2 {
+  font-size: var(--sz4);
+}
+
+/***/
+
+ 

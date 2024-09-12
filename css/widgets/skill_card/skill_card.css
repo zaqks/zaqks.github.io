@@ -1,0 +1,37 @@
+.section.skill_card {
+  padding: var(--sz4);
+  border-radius: var(--sz3);
+
+  background-color: var(--bg1);
+}
+
+.section.skill_card .section_title {
+  display: none;
+}
+
+.section.skill_card .section_content {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  column-gap: var(--sz2);
+}
+
+.section.skill_card .section_content img {
+  width: 25%;
+  aspect-ratio: 1;
+}
+
+.section.skill_card .section_content h1 {
+  font-size: var(--sz5);
+  margin: 0 auto;  
+  text-align: center;
+}
+.section.skill_card .section_content p {
+  font-size: var(--sz3);
+  color: var(--txt1);
+
+  margin-top: var(--sz2);
+
+  display: none;
+}
