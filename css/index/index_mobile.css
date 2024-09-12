@@ -5,6 +5,8 @@
   }
 
   .navbar {        
+   
+   display: none;
     overflow-x: scroll;    
     justify-content: start;      
     
@@ -29,6 +31,8 @@
   .section#projects > .section_content {
     display: flex;
     flex-direction: column;
+
+    gap: var(--sz5);
   }
 
   /*skills*/  
