@@ -1,9 +1,4 @@
-.section#contact {
-  
-  flex: none;
-  min-height: 100vh;
-  
-
+.section#contact {      
   justify-content: center;
 }
 
