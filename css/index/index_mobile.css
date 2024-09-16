@@ -43,23 +43,23 @@
 
   /* about */
 
-  .section#about > .section_content {
+  .section#about .section#info > .section_content {
     flex-direction: column;
   }
 
-  .section#about > .section_content #left {
+  .section#about .section#info > .section_content #left {
     width: 100%;    
   }
-  .section#about > .section_content #left img{
+  .section#about .section#info > .section_content #left img{
     width: 80%;
     border-radius: 50%;
   }
 
-  .section#about > .section_content #right {
+  .section#about .section#info > .section_content #right {
     width: 100%;    
   }
 
-  .section#about > .section_content #right {
+  .section#about .section#info > .section_content #right {
     text-align: center;    
   }
 
