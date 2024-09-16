@@ -1,13 +1,4 @@
 const PROJECTS = [
-  {
-    img: "assets/images/projects/encryption.png",
-    title: "Public web encryption",
-    desc: `This is a simple implementation of an encrypted public webpage using the crpyto-js library.
-    The content is stored as a token and can't be viewed until decrypted by the visitor.
-    This method allows the hosting of sensitive material statically without using an API for authentication, but it's still vulnerable to brute force attacks like anyother password protected ressource.
-    All the visitor has to do is input the right key in order to view the web content.`,
-    url: "https://github.com/zaqks/public_web_encryption",
-  },
 
   {
     img: "assets/images/comingsoon.jpg",
@@ -18,6 +9,15 @@ const PROJECTS = [
     img: "assets/images/comingsoon.jpg",
     title: "DOOM Web",
     desc: `An upgrade & web version for my previous Raycaster. It features more advanced projection methods, collision detection, Y axis, a more detailed map, WebGL instead of Software acceleration.`,
+  },
+  {
+    img: "assets/images/projects/encryption.png",
+    title: "Public web encryption",
+    desc: `This is a simple implementation of an encrypted public webpage using the crpyto-js library.
+    The content is stored as a token and can't be viewed until decrypted by the visitor.
+    This method allows the hosting of sensitive material statically without using an API for authentication, but it's still vulnerable to brute force attacks like anyother password protected ressource.
+    All the visitor has to do is input the right key in order to view the web content.`,
+    url: "https://github.com/zaqks/public_web_encryption",
   },
   {
     img: "assets/images/projects/ml.png",
