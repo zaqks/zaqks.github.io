@@ -1,5 +1,4 @@
 const PROJECTS = [
-
   {
     img: "assets/images/comingsoon.jpg",
     title: "Movie Rating (RNN)",
@@ -14,9 +13,7 @@ const PROJECTS = [
     img: "assets/images/projects/encryption.png",
     title: "Public web encryption",
     desc: `This is a simple implementation of an encrypted public webpage using the crpyto-js library.
-    The content is stored as a token and can't be viewed until decrypted by the visitor.
-    This method allows the hosting of sensitive material statically without using an API for authentication, but it's still vulnerable to brute force attacks like anyother password protected ressource.
-    All the visitor has to do is input the right key in order to view the web content.`,
+    The content is stored as a token and can't be viewed until decrypted by the visitor.`,
     url: "https://github.com/zaqks/public_web_encryption",
   },
   {
@@ -78,6 +75,11 @@ const PROJECTS = [
     title: "SDL Raycaster",
     desc: `A basic raycaster first interpretation using the SDL library based on the techniques used to make the famous DOOM game. It is able to render maps defined by a 2D array.`,
     url: "https://github.com/zaqks/SDL_RAYCASTER",
+  },
+  {
+    img: "",
+    title: "Resto app",
+    desc: "resto desc",
   },
   {
     img: "assets/images/projects/3d_proj.png",
