@@ -76,11 +76,13 @@ const PROJECTS = [
     desc: `A basic raycaster first interpretation using the SDL library based on the techniques used to make the famous DOOM game. It is able to render maps defined by a 2D array.`,
     url: "https://github.com/zaqks/SDL_RAYCASTER",
   },
+  /*
   {
     img: "",
     title: "Resto app",
     desc: "resto desc",
   },
+  */
   {
     img: "assets/images/projects/3d_proj.png",
     title: "3D Renderer",
