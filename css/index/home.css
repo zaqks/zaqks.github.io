@@ -1,7 +1,7 @@
 @import url(../widgets/contact_card/contact_card.css);
 
 .section#home {
-  flex: none;  
+  flex: none;
   min-height: 100vh;
 }
 
@@ -23,6 +23,22 @@
   font-size: var(--sz4);
 }
 
-/***/
+/* btn */ 
 
- 
+.section#home .section_content #right a {
+  font-size: var(--sz5);
+  border: 1px solid var(--txt0);
+
+  border-radius: var(--sz5);
+  padding: var(--sz3) var(--sz5);
+
+  transition: all 500ms ease;
+}
+
+
+.section#home .section_content #right a:hover{
+  background-color: var(--txt0);
+  color: var(--bg0);
+}
+
+
