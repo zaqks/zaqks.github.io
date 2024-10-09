@@ -24,8 +24,17 @@
 }
 
 /* btn */ 
+.section#home .section_content #right .section_content#btns{
+  flex-direction: column;
+  row-gap: var(--sz2);  
+}
 
-.section#home .section_content #right a {
+
+.section#home .section_content #right  a {
+  width: 100%;
+
+  text-align: center;
+
   font-size: var(--sz5);
   border: 1px solid var(--txt0);
 
