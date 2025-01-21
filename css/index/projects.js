@@ -1,5 +1,10 @@
 const PROJECTS = [
   {
+    img:"assets/images/projects/quake.png",
+    title:"QuakeGuard",
+    desc:"an API 7 and App that allow EarthQuake detection using an Arduino Vibration Sensor Or Dedicated Hardware (Prototyping using Wifi and Bluetooth)"
+  }
+  {
     img: "assets/images/comingsoon.jpg",
     title: "Movie Rating (RNN)",
     desc: `An RNN is gonna be added to the MLZ library. It will be used to rate movis according to the audience comments, whenever the comments are positive, negative or neutral.`,
