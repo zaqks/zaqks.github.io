@@ -2,8 +2,9 @@ const PROJECTS = [
   {
     img:"assets/images/projects/quake.png",
     title:"QuakeGuard",
-    desc:"an API 7 and App that allow EarthQuake detection using an Arduino Vibration Sensor Or Dedicated Hardware (Prototyping using Wifi and Bluetooth)"
-  }
+    desc:"an API 7 and App that allow EarthQuake detection using an Arduino Vibration Sensor Or Dedicated Hardware (Prototyping using Wifi and Bluetooth)",
+    url:"https://github.com/zaqks/QuakeGuard"
+  },
   {
     img: "assets/images/comingsoon.jpg",
     title: "Movie Rating (RNN)",
