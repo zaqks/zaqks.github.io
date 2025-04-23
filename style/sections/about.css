@@ -1,14 +1,17 @@
-.section.page_section#about>.section_content {
-    margin: auto 0;
+.section.page_section#about>.section_content>.section {
+    background-color: var(--bg0);
+    background-color: green;
+    /* padding: var(--sz5); */
+    border-radius: var(--sz3);
+    gap: 0;
+
 }
 
 
 
-.section.page_section#about .section_content>.section {
-    background-color: var(--bg0);
-    padding: var(--sz5);
-    border-radius: var(--sz3);
-
+.section.page_section#about>.section_content>.section>.section_title,
+.section.page_section#about>.section_content>.section>.section_content {
+    padding: var(--sz3);
 }
 
 
@@ -55,7 +58,6 @@
 }
 
 
-
 .section.page_section#about #stat_cards .stat {
     display: flex;
     flex-direction: column;
@@ -66,7 +68,7 @@
     height: 100%;
 
     border-radius: var(--sz2);
-    padding: var(--sz3);
+    padding: var(--sz3) 0;
     font-size: var(--sz4);
 
     color: var(--txt1);
