@@ -1,0 +1,36 @@
+.section.page_section#projects>.section_title>* {
+    margin: 0;
+}
+
+.section.page_section#projects>.section_title a{
+    font-size: var(--sz4);
+}
+
+.section.project_card {
+    background-color: var(--bg0);
+    gap: var(--sz3);
+    height: 100%;
+
+    border-radius: var(--sz3);
+    border-bottom: 1px solid var(--accent0);
+}
+
+
+.section.project_card .section_title img {
+    width: 100%;
+    aspect-ratio: 2;
+
+    object-fit: cover;
+    object-position: center;
+
+    /* border-radius: var(--sz3); */
+}
+
+.section.project_card .section_content {
+    padding: var(--sz3);
+}
+
+.section.project_card .section_content p {
+    color: var(--txt1);
+    text-align: justify;
+}

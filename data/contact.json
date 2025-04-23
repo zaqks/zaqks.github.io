@@ -1,0 +1,17 @@
+[
+    {
+        "img": "assets/icons/github.svg",
+        "title": "Github",
+        "url": "https://github.com/zaqks"
+    },
+    {
+        "img": "assets/icons/gmail.svg",
+        "title": "Gmail",
+        "url": "mailto:zakeladj@gmail.com"
+    },
+    {
+        "img": "assets/icons/linkedin.svg",
+        "title": "LinkedIn",
+        "url": "https://linkedin.com/in/salim-zakaria-eladj"
+    }
+]

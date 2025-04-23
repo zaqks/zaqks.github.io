@@ -1,0 +1,48 @@
+#navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--sz4) var(--sz7);
+    backdrop-filter: blur(50px);
+}
+
+
+#navbar button {
+    background: none;
+    border: none;
+    font-size: var(--sz9);
+    padding: var(--sz1);
+
+    display: none;
+}
+
+#navbar a {
+    font-size: var(--sz4);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/* SECTIONS */
+
+#navbar #sections {
+    display: flex;
+    align-items: center;
+    gap: var(--sz5);
+}
+
+
+#navbar a#contact_btn {
+    border-radius: var(--sz2);
+    padding: var(--sz2) var(--sz3);
+    /* border: 1.5px solid white; */
+    background-color: var(--accent1);
+}

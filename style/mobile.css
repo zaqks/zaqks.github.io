@@ -1,0 +1,77 @@
+@media only screen and (max-width: 700px) {
+
+    /* HOME */
+    .section.page_section#home>.section_content {
+        flex-direction: column;
+        gap: var(--sz4);
+        text-align: center;
+        /* background-color: red; */
+    }
+
+    .section.page_section#home .section_content img {
+        width: 60%;
+    }
+
+    .section.page_section#home .section {
+        width: 100%;
+        /* background-color: green; */
+    }
+
+    .section.page_section#home .section .section_title {
+        justify-content: center;
+    }
+
+    /* .section.page_section#home .section .section_content{
+        background-color: orange;
+    } */
+
+    .section.page_section#home .section .section_content #buttons {
+        justify-content: center;
+    }
+
+    #buttons a {
+        margin-top: var(--sz4);
+        width: 100%;
+    }
+
+    /* SERVICES */
+    #srv_cards {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sz3);
+    }
+
+    /* PROJECTS */
+    /* EXP */
+    /* CONTACTS */
+    #project_cards,
+    #exp_cards,
+    #contact_cards {
+        display: flex;
+        flex-direction: column;
+        gap: var(--sz3);
+    }
+
+
+    /* NAV */
+    #navbar{
+        align-items: start;
+    }
+
+    #navbar #sections button {
+        display: flex;
+    }
+
+    #navbar #sections {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #navbar #sections a {
+        display: none;
+    }
+
+    #navbar.max #sections a {
+        display: flex;
+    }
+}

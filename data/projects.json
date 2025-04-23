@@ -1,0 +1,51 @@
+[
+    {
+        "img": "assets/images/comingsoon.jpg",
+        "title": "NeuroCareAI",
+        "desc": "AI Neuro Imaging Suite"
+    },
+    {
+        "img": "https://github.com/zaqks/U2Net_BodyMeasurement/raw/main/out/test_lines.jpg",
+        "title": "U2Net_BodyMeasurment",
+        "desc": "Human Body Measurement from Image using AI.",
+        "url": "https://github.com/zaqks/QuakeGuard"
+    },
+    {
+        "img": "https://github.com/zaqks/miniDEL/raw/main/docs/screen.png",
+        "title": "MiniDEL Pseudo Compiler",
+        "desc": "Pseudo-language compiler (lexer/parser/semantic analyzer) built with Lex, Bison, and C (binaries only), with integrated editor.",
+        "url": "https://github.com/zaqks/QuakeGuard"
+    },
+    {
+        "img": "assets/images/projects/quake.png",
+        "title": "QuakeGuard",
+        "desc": "This is an API that allows EarthQuake detection using an Arduino Vibration Sensor Or Dedicated Hardware (Prototyping using Wifi and Bluetooth)",
+        "url": "https://github.com/zaqks/QuakeGuard"
+    },
+    {
+        "img": "assets/images/projects/mlz.svg",
+        "title": "Machine Learning Library (MLZ)",
+        "desc": "A machine learning library built from scratch using Numpy. It provides an environment for developing custom layers and activation methods, supporting classical NNs and CNNs while expanding for additional tools."
+    },
+    {
+        "img": "https://github.com/zaqks/WhisperKeys/raw/main/docs/screen.png",
+        "title": "WhisperKeys",
+        "desc": "Mechanical keyboards sound replicator."
+    },
+    {
+        "img": "assets/images/projects/majesty.png",
+        "title": "MAJESTY",
+        "desc": "An e-commerce API featuring 3D product previews generated from multi-angle images processed with photogrammetry algorithms. Includes shop and order management systems with statistics."
+    },
+    {
+        "img": "assets/images/projects/chat.png",
+        "title": "Encrypted Chat System",
+        "desc": "An encrypted chat system with integrated VPN and proxy and customizable UI features. Includes API integration."
+    },
+    {
+        "img": "assets/images/projects/sdl_raycast.png",
+        "title": "SDL Raycaster",
+        "desc": "A basic raycaster implemented using the SDL library based on techniques from the DOOM game. It renders maps defined by a 2D array.",
+        "url": "https://github.com/zaqks/SDL_RAYCASTER"
+    }
+]

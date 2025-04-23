@@ -1,162 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>zaqks</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
 
-    <meta
-      name="google-site-verification"
-      content="baBOoIKoS0s67zwfD9dPLE_jPplnVwqUse3ZzZSDEUI"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELADJ Salim Zakaria</title>
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/index/index.css" />
-    <link rel="stylesheet" href="css/index/index_mobile.css" />
-  </head>
+  <meta name="google-site-verification" content="baBOoIKoS0s67zwfD9dPLE_jPplnVwqUse3ZzZSDEUI" />
+  <!-- THEME -->
+  <link rel="stylesheet" href="style/theme.css">
 
-  <body>
-    <img src="assets/gif/bg.gif" alt="" id="bg" />
+  <!-- WIDGETS -->
+  <link rel="stylesheet" href="style/section.css">
 
-    <div class="navbar">
+
+  <!-- SECTIONS -->
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/sections/home.css">
+  <link rel="stylesheet" href="style/sections/projects.css">
+  <link rel="stylesheet" href="style/sections/exp.css">
+  <link rel="stylesheet" href="style/sections/about.css">
+  <link rel="stylesheet" href="style/sections/contact.css">
+
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="style/mobile.css">
+
+  <!-- SCRIPTS -->
+  <script src="js/fetch.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="navbar">    
+    <div id="sections">
+      <button id="navbtn" onclick="document.getElementById('navbar').classList.toggle('max')">≡</button>
+
       <a href="#home">Home</a>
-      <a href="#projects">Projects </a>
-      <a href="#skills">Skills </a>
+      <a href="#srv">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#exp">Experience</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
     </div>
 
-    <div class="section page" id="home">
-      <div class="section_content">
-        <div id="left">
-          <h1>Hi, I'm Zak</h1>
-          <h2>Fullstack Developer</h2>
-          <h2>Software & AI Engineer</h2>
-          <h2>DevOps Engineer</h2>
-          <h2>Game developer</h2>
+    <a id="contact_btn" href="#contact">Hire Me</a>
+
+
+  </div>
+
+
+  <!-- SHORTCUT -->
+
+  <!-- HOME -->
+  <div class="section page_section" id="home">
+    <div class="section_content">
+      <img src="assets/images/pfp.jpeg" alt="">
+      <div class="section">
+        <div class="section_title">
+          <h1>Hey, I'm Zak</h1>
+        </div>
+        <div class="section_content">
+          <p>AI & Visual Computing Engineer</p>
+          <p>Fullstack Developer</p>
+          <p>Freelancer</p>
+
+          <div id="buttons">
+            <a href="assets/docs/resume.pdf">See My Resume</a>
+            <!-- <a href="#projects" id="down">▼</a> -->
+          </div>
+
         </div>
 
-        <div id="right">
-          <div class="section">
-            <div class="section_content" id="btns">
-              <a href="#projects">Keep Scrolling</a>
-              <a href="assets/docs/resume.pdf">See My Resume</a>
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="section page_section" id="srv">
+    <div class="section_title">
+      <h2>Services</h2>
+    </div>
+    <div class="section_content grid3" id="srv_cards"></div>
+    <script src="js/page_sections/srv.js"></script>
+  </div>
+
+
+  <!-- PROJECTS -->
+  <div class="section page_section" id="projects">
+    <div class="section_title">
+      <h2>
+        Pinned Projects
+      </h2>
+      <a href="https://github.com/zaqks?tab=repositories">See More</a>
+    </div>
+
+    <div class="section_content grid3" id="project_cards">
+
+    </div>
+    <script src="js/page_sections/projects.js"></script>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section page_section" id="exp">
+    <div class="section_title">
+      <h2>Experience</h2>
+    </div>
+    <div class="section_content grid2" id="exp_cards"></div>
+    <script src="js/page_sections/exp.js"></script>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="section page_section" id="about">
+    <div class="section_content">
+      <div class="section">
+        <img src="assets/gif/johnwick.gif" alt="">
+        <div class="section_title">
+          <h2>Who Am I?</h2>
+        </div>
+        <div class="section_content">
+          <p>I am a dedicated and versatile professional specializing in artificial intelligence engineering, visual
+            computing, full-stack development, and software engineering. I actively work in these fields, contributing
+            to innovative projects and conducting research focused on deep learning and visual computing. With a
+            strong
+            academic foundation in computer science and hands-on experience in cutting-edge technologies, I aim to
+            tackle complex challenges and create impactful solutions. My work bridges the gap between machine learning
+            and human-centered design, combining technical expertise with creativity to drive advancements in
+            artificial
+            intelligence and software development.</p>
+
+
+
+
+          <div class="section" id="stats_sect">
+            <div class="section_content grid3" id="stat_cards"></div>
           </div>
+
+
+
+          <script src="js/page_sections/about.js"></script>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="section page" id="projects">
-      <div class="section_title">
-        <h1>My Projects</h1>
-      </div>
-      <div class="section_content grid3" id="project_cards"></div>
+  <!-- CONTACT -->
 
-      <script src="css/widgets/project_card/project_card.js"></script>
-      <script src="css/index/projects.js"></script>
+  <div class="section page_section" id="contact">
+    <div class="section_title">
+      <h2>Contact Me</h2>
+      <p>Here are my social accounts to contact me & connect with me</p>
     </div>
 
-    <div class="section page" id="skills">
-      <div class="section_title">
-        <h1>My Skills</h1>
-      </div>
-      <div class="section_content">
-        <img src="https://skillicons.dev/icons?i=all" alt="" style="width: 100%; object-fit: contain;">
-
-
-      <!--
-        <div class="section main categ_section">
-          <div class="section_title">
-            <h2>Languages</h2>
-          </div>
-          <div class="section_content grid3" id="lang_cards"></div>
-        </div>
-
-        <div class="section main categ_section">
-          <div class="section_title">
-            <h2>Frameworks</h2>
-          </div>
-          <div class="section_content grid3" id="framework_cards"></div>
-        </div>
-
-        <div class="section main categ_section">
-          <div class="section_title">
-            <h2>Services</h2>
-          </div>
-          <div class="section_content grid3" id="service_cards"></div>
-        </div>
-
-        <div class="section main categ_section">
-          <div class="section_title">
-            <h2>Kernels & OS</h2>
-          </div>
-          <div class="section_content grid3" id="os_cards"></div>
-        </div>
-
-        <div class="section main categ_section">
-          <div class="section_title">
-            <h2>Media Editing & Modeling</h2>
-          </div>
-          <div class="section_content grid3" id="software_cards"></div>
-        </div>
-      -->
-      </div>
-    <!--
-      <script src="css/widgets/skill_card/skill_card.js"></script>
-      <script src="css/index/skills.js"></script>
-    -->
+    <div class="section_content">
+      <div class="section_content grid2" id="contact_cards"></div>
     </div>
 
-    <div class="section page" id="about">
-      <div class="section_title">
-        <h1>About Me</h1>
-      </div>
-      <div class="section_content">
-        <div class="section" id="info">
-          <div class="section_content">
-            <div id="left">
-              <img src="assets/images/pfp.webp" alt="" />
-            </div>
-            <div id="right">
-              <p>
-                I am a CS student who eats Artificial Intelligence & Machine
-                Learning for breakfast. <br />
-                I worked as a Fullstack & Game Dev, and completed several
-                projects. I've praticipated in hackathons and online CTFs;
-                <br />
-                So that means I am also obsessed with Data science and Cyber
-                Security.<br />
-                My free time consists of playing guitar, piano, else I would be
-                working on a startup project. <br />
-                And most importantly, <br />
-                I use Arch Btw
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--
-        <div class="section" id="contribs">          
-          <div class="section_content">
-            <iframe
-              src="https://jandee.vercel.app/zaqks"
-              width="100%"
-              height="100%"                           
-            ></iframe>
-          </div>
-        </div>
-        -->
-      </div>
+    <div id="me">
+      <a href="#home">Made By Zak</a>
+      <p>2025</p>
     </div>
 
-    <div class="section page" id="contact">
-      <div class="section_title">
-        <h1>Get in touch</h1>
-      </div>
-      <div class="section_content grid3" id="contact_cards"></div>
-      <script src="css/widgets/contact_card/contact_card.js"></script>
-      <script src="css/index/contact.js"></script>
-    </div>
-  </body>
+
+
+
+    <script src="js/page_sections/contact.js"></script>
+  </div>
+
+
+</body>
+
 </html>

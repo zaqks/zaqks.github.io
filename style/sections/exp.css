@@ -1,0 +1,32 @@
+.section.exp_card {
+    height: 100%;
+    background-color: var(--bg0);
+
+    padding: var(--sz4);
+    border-radius: var(--sz3);
+
+    border-bottom: 1px solid var(--accent0);
+}
+
+
+.section.exp_card .section_title {
+    gap: var(--sz3);
+    align-items: start;
+}
+
+
+.section.exp_card .section_title h2 {
+    font-size: var(--sz5);
+}
+
+.section.exp_card h2.time {
+    margin-top: var(--sz2);
+    color: var(--accent0);    
+
+}
+
+.section.exp_card .section_content p {
+    color: var(--txt1);
+    text-align: justify;
+    font-size: var(--sz3);
+}
