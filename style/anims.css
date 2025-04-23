@@ -1,0 +1,38 @@
+:root {
+    /* Animation scale values */
+    --scale-hover: 1.1;
+
+    /* Transition properties */
+    --transition-property: transform, color;
+    --transition-duration: 0.3s;
+    --transition-timing: ease-in-out;
+    --transition: var(--transition-property) var(--transition-duration) var(--transition-timing);
+}
+
+/* NAVBAR */
+#navbar a#contact_btn:hover {
+    transform: scale(var(--scale-hover));
+    transition: var(--transition);
+}
+
+#navbar #sections a:hover {
+    color: var(--accent1);
+    transform: scale(var(--scale-hover));
+    transition: var(--transition);
+}
+
+/* HOME */
+.section.page_section#home #buttons a:hover {
+    transform: scale(var(--scale-hover));
+    transition: var(--transition);
+}
+
+/* EXP */
+.section.exp_card:hover,
+.section.project_card:hover,
+.contact a:hover {
+    transform: scale(var(--scale-hover));
+    z-index: 2;
+    transition: var(--transition);
+    box-shadow: 0 0 5px 5px #aaaaaaAA;
+}

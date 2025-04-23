@@ -13,5 +13,10 @@
         "img": "assets/icons/linkedin.svg",
         "title": "LinkedIn",
         "url": "https://linkedin.com/in/salim-zakaria-eladj"
+    },
+    {
+        "img": "assets/icons/whatsapp.svg",
+        "title": "(+213)792397906",
+        "url": "#contact"
     }
 ]

@@ -35,18 +35,13 @@
     }
 
     /* SERVICES */
-    #srv_cards {
-        display: flex;
-        flex-direction: column;
-        gap: var(--sz3);
-    }
-
     /* PROJECTS */
     /* EXP */
     /* CONTACTS */
     #project_cards,
     #exp_cards,
-    #contact_cards {
+    #contact_cards,
+    #srv_cards {
         display: flex;
         flex-direction: column;
         gap: var(--sz3);
@@ -54,7 +49,7 @@
 
 
     /* NAV */
-    #navbar{
+    #navbar.max {
         align-items: start;
     }
 

@@ -13,6 +13,8 @@
 
     border-radius: var(--sz3);
     border-bottom: 1px solid var(--accent0);
+
+    overflow: hidden;
 }
 
 

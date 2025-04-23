@@ -1,25 +1,21 @@
-body * {
-    overflow: hidden;
-}
+ body {
+     padding: 0 10vw;
+ }
 
-body {
-    padding: 0 10vw;
-}
+ .page_section {
+     margin: 0 auto;
+     max-width: 1000px;
 
-.page_section {
-    margin: 0 auto;
-    max-width: 1000px;
+     min-height: 100vh;
+     padding: var(--sz19) 0;
 
-    min-height: 100vh;
-    padding: var(--sz19) 0;
-
-    gap: var(--sz10);
-    justify-content: center;
-}
+     gap: var(--sz10);
+     justify-content: center;
+ }
 
 
-.page_section > .section_title > *{
-    margin: auto;
-    font-size: var(--sz7);
-    margin-bottom: var(--sz4);
-}
+ .page_section>.section_title>* {
+     margin: auto;
+     font-size: var(--sz7);
+     margin-bottom: var(--sz4);
+ }
