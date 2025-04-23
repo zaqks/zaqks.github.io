@@ -1,6 +1,10 @@
+#about.section.page_section .section_content .section img {
+    margin-bottom: var(--sz3);    
+}
+
 .section.page_section#about>.section_content>.section {
     background-color: var(--bg0);
-    background-color: green;
+    /* background-color: green; */
     /* padding: var(--sz5); */
     border-radius: var(--sz3);
     gap: 0;
