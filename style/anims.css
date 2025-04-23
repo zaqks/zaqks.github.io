@@ -34,5 +34,5 @@
     transform: scale(var(--scale-hover));
     z-index: 2;
     transition: var(--transition);
-    box-shadow: 0 0 5px 5px #aaaaaaAA;
+    box-shadow: 0 0 10px 10px #03a9f409;
 }
