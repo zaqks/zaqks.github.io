@@ -1,6 +1,16 @@
 [
     {
         "time": "2025",
+        "title": "Lead AI Engineer & Fullstack Developer at UrbaSense - Startup",
+        "desc": "AI-driven solution built with a Flutter mobile app and secure web platform for reporting and managing urban anomalies, using a Random Forest model for automatic classification of geolocated reports and featuring a badge system to boost citizen engagement."
+    },
+        {
+        "time": "2025",
+        "title": "AI Day USTHB Coach",
+        "desc": "Led a workshop on AI-driven oil price forecasting and trading strategies, leveraging a colleague-developed tool for seamless data preprocessing and visualization, and demonstrated real-time production and stock predictions using LSTMs and CNNs for sequential data analysis."
+    },
+    {
+        "time": "2025",
         "title": "Mentor and Conference Speaker at OpenHouse USTHB",
         "desc": "Participated as a mentor and speaker, delivering workshops on Python and PyTorch, and presenting a mini-conference on the mathematical foundations of Neural Networks and Deep Learning. Showcased projects including Human Body Health Indices Estimation using the U2Net_Model, interactive PyTorch demos like MNIST, and AI applications such as Brain Tumor Segmentation Models. Engaged attendees with interactive tools like Body Posture Detection and Body Roundness Index calculator, fostering discussions on health, AI, and accessibility."
     },
