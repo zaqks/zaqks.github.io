@@ -1,6 +1,6 @@
 [
     {
-        "img": "assets/images/screen.png",
+        "img": "assets/images/proejcts/screen.png",
         "title": "NeuroCareAI",
         "desc": "I developed a fast, optimized AI model with a unique architecture that accurately segments 3D brain tumors from low-quality 2D MRI scans, even with missing sequences, achieving 93% precision validated by real patient data and expert medical feedback. I built a complete ecosystem around it, including a robust API, a WebGL-based web app for 3D visualization and job management, and a desktop app with advanced features. I’m preparing to outsource the full codebase and documentation to enable wider access, collaboration, and integration into clinical workflows to improve diagnostics and patient outcomes."
     },
