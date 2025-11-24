@@ -11,14 +11,14 @@ const exp_card_template = `
 </div>`;
 //////////////////////////////////////////////////////////
 
-fetchJson("data/experience.json").then(function (json) {
+fetchCsv("data/experience.csv").then(function (json) {
   var content;
   //
   for (let project of json) {
     content = exp_card_template;
     //replace
     for (let tkn of ["time", "title", "desc"]) {
-      content = content.replace(`#${tkn}#`, project[tkn]);
+      content = content.replace(`#${tkn}#`, project[tkn] || '');
     }
     //append
     exp_cards.innerHTML += content;

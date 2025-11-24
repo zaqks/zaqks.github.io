@@ -9,16 +9,14 @@ const contact_card_template = `
 </div>`;
 ////////////////////////////////////////////////////////// 
 
-
-
-fetchJson('data/contact.json').then(function (json) {
+fetchCsv('data/contact.csv').then(function (json) {
   var content;
   //
   for (let project of json) {
     content = contact_card_template
     //replace
     for (let tkn of ["url", "title", "img"]) {
-      content = content.replace(`#${tkn}#`, project[tkn])
+      content = content.replace(`#${tkn}#`, project[tkn] || '')
     }
     //append
     contact_cards.innerHTML += content;

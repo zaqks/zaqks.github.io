@@ -11,16 +11,14 @@ const project_card_template = `
 </div>`;
 ////////////////////////////////////////////////////////// 
 
-
-
-fetchJson('data/projects.json').then(function (json) {
+fetchCsv('data/projects.csv').then(function (json) {
   var content;
   //
   for (let project of json) {
     content = project_card_template
     //replace
     for (let tkn of ["img", "title", "desc"]) {
-      content = content.replace(`#${tkn}#`, project[tkn])
+      content = content.replace(`#${tkn}#`, project[tkn] || '')
     }
     //append
     project_cards.innerHTML += content;

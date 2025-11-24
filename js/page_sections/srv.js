@@ -10,14 +10,14 @@ const srv_card_template = `
 </div>`;
 //////////////////////////////////////////////////////////
 
-fetchJson("data/services.json").then(function (json) {
+fetchCsv("data/services.csv").then(function (json) {
   var content;
   //
   for (let project of json) {
     content = srv_card_template;
     //replace
     for (let tkn of ["time", "title", "desc"]) {
-      content = content.replace(`#${tkn}#`, project[tkn]);
+      content = content.replace(`#${tkn}#`, project[tkn] || '');
     }
     //append
     srv_cards.innerHTML += content;

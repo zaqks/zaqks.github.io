@@ -6,16 +6,14 @@ const stat_card_template = `
 </div>`;
 ////////////////////////////////////////////////////////// 
 
-
-
-fetchJson('data/stats.json').then(function (json) {
+fetchCsv('data/stats.csv').then(function (json) {
   var content;
   //
   for (let project of json) {
     content = stat_card_template
     //replace
     for (let tkn of ["num", "unit"]) {
-      content = content.replace(`#${tkn}#`, project[tkn])
+      content = content.replace(`#${tkn}#`, project[tkn] || '')
     }
     //append
     stat_cards.innerHTML += content;
