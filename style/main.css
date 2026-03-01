@@ -551,8 +551,9 @@ a {
     }
 
     .home-image img {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
     }
 
     .services-grid {
@@ -560,11 +561,20 @@ a {
     }
 
     .timeline {
-        padding-left: 1rem;
+        padding-left: 1.5rem;
+    }
+
+    .timeline::before {
+        left: 0;
     }
 
     .timeline-item {
         padding-left: 1.5rem;
+    }
+
+    .timeline-item::before {
+        left: -1.5rem;
+        transform: translateX(-6px);
     }
 
     .projects-grid {
