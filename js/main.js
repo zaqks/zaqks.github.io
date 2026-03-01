@@ -229,9 +229,13 @@ async function loadProjectsSection() {
 async function loadAboutSection() {
     const aboutData = await loadCSV('data/about.csv');
     
-    if (aboutData.length > 0) {
-        const about = aboutData[0];
-        
+    // Convert field-value pairs to object
+    const about = {};
+    aboutData.forEach(row => {
+        about[row.field] = row.value;
+    });
+    
+    if (Object.keys(about).length > 0) {
         document.getElementById('about-title').textContent = about.title || 'About';
         document.getElementById('about-description').textContent = about.description || '';
         
