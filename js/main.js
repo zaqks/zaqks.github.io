@@ -286,15 +286,30 @@ async function loadContactSection() {
     const contactData = await loadCSV('data/contact.csv');
     const contactGrid = document.getElementById('contact-grid');
     
-    contactData.forEach(contact => {
+    contactData.forEach(async contact => {
         const card = document.createElement('a');
         card.href = contact.url || '#';
         card.className = 'contact-card';
         card.target = '_blank';
         card.rel = 'noopener noreferrer';
-        
+
+        let iconHTML = '';
+        if (contact.img && contact.img.endsWith('.svg')) {
+            try {
+                const res = await fetch(contact.img);
+                let svg = await res.text();
+                // Add class to SVG root and ensure proper styling for CDN SVGs
+                svg = svg.replace('<svg', '<svg class="contact-icon" fill="currentColor"');
+                iconHTML = svg;
+            } catch (e) {
+                iconHTML = `<img src="${contact.img}" alt="${contact.title}" class="contact-icon">`;
+            }
+        } else {
+            iconHTML = `<img src="${contact.img}" alt="${contact.title}" class="contact-icon">`;
+        }
+
         card.innerHTML = `
-            <img src="${contact.img}" alt="${contact.title}" class="contact-icon">
+            ${iconHTML}
             <div class="contact-title">${contact.title}</div>
         `;
         contactGrid.appendChild(card);

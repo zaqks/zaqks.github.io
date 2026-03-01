@@ -133,6 +133,10 @@ a {
     padding: 5rem 0;
 }
 
+.section > .container {
+    width: 100%;
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -454,7 +458,8 @@ a {
     width: 48px;
     height: 48px;
     margin-bottom: 1rem;
-    filter: invert(1);
+    color: var(--primary-color);
+    fill: currentColor;
 }
 
 .contact-title {

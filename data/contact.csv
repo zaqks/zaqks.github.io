@@ -1,5 +1,5 @@
 img,title,url
-assets/icons/github.svg,Github,https://github.com/zaqks
-assets/icons/gmail.svg,Gmail,mailto:zakeladj@gmail.com
-assets/icons/linkedin.svg,LinkedIn,https://linkedin.com/in/salim-zakaria-eladj
-assets/icons/whatsapp.svg,"(+213)792397906",tel:+213792397906
+https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/github.svg,Github,https://github.com/zaqks
+https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/gmail.svg,Gmail,mailto:zakeladj@gmail.com
+https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/linkedin.svg,LinkedIn,https://linkedin.com/in/salim-zakaria-eladj
+https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/whatsapp.svg,Mobile,tel:+213792397906
