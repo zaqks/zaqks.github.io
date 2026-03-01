@@ -4,9 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zak - Portfolio</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio</title>
+    <meta name="title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
+    <meta name="description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing. Expert in deep learning, full-stack development, and real-time AI deployment.">
+    <meta name="keywords" content="AI Engineer, Data Scientist, Full-Stack Developer, Machine Learning, Deep Learning, Computer Science, Software Engineer, IoT, Web Development, Python, AI Research">
+    <meta name="author" content="Zak">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaqks.github.io/">
+    <meta property="og:title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
+    <meta property="og:description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
+    <meta property="og:image" content="https://zaqks.github.io/assets/images/pfp.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zaqks.github.io/">
+    <meta property="twitter:title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
+    <meta property="twitter:description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
+    <meta property="twitter:image" content="https://zaqks.github.io/assets/images/pfp.jpeg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://zaqks.github.io/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
     <link rel="stylesheet" href="style/main.css">
 
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zak",
+        "url": "https://zaqks.github.io/",
+        "image": "https://zaqks.github.io/assets/images/pfp.jpeg",
+        "jobTitle": "AI Engineer, Data Scientist, Full-Stack Developer",
+        "description": "Computer Science graduate and AI researcher with extensive hands-on experience as an AI Engineer, Data Scientist, Full-Stack Developer, and Software Engineer.",
+        "sameAs": [
+            "https://github.com/zaqks"
+        ],
+        "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Full-Stack Development", "Data Science", "IoT", "Software Engineering", "Web Development"]
+    }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4KPHGFGJE"></script>
@@ -22,10 +67,10 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <!-- <div class="nav-logo"></div> -->
-            <button class="nav-toggle" aria-label="Toggle menu">
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,81 +88,81 @@
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="section home-section">
+    <section id="home" class="section home-section" aria-label="Home introduction">
         <div class="container">
             <div class="home-content">
                 <div class="home-text">
                     <h1 class="home-greeting">Hi, I'm <span class="highlight" id="home-name">Zak</span></h1>
-                    <p class="home-title" id="home-title"></p>
+                    <p class="home-title" id="home-title">AI Engineer | Data Scientist | Full-Stack Developer</p>
                     <div class="home-actions">
-                        <a href="#" class="btn btn-primary" id="resume-btn">View Resume</a>
-                        <a href="#" class="btn btn-secondary" id="github-btn">GitHub</a>
+                        <a href="assets/docs/resume.pdf" class="btn btn-primary" id="resume-btn" aria-label="View Zak's resume">View Resume</a>
+                        <a href="https://github.com/zaqks" class="btn btn-secondary" id="github-btn" aria-label="Visit Zak's GitHub profile" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </div>
                 </div>
                 <div class="home-image">
-                    <img src="assets/images/pfp.jpeg" alt="Profile" id="profile-img">
+                    <img src="assets/images/pfp.jpeg" alt="Zak - AI Engineer and Full-Stack Developer profile picture" id="profile-img" width="400" height="400">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section">
+    <section id="services" class="section" aria-labelledby="services-heading">
         <div class="container">
-            <h2 class="section-title">Services</h2>
+            <h2 class="section-title" id="services-heading">Services</h2>
             <div class="services-grid" id="services-grid"></div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
+    <section id="experience" class="section" aria-labelledby="experience-heading">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title" id="experience-heading">Experience</h2>
             <div class="timeline" id="timeline"></div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section" aria-labelledby="projects-heading">
         <div class="container">
-            <h2 class="section-title">Pinned Projects</h2>
+            <h2 class="section-title" id="projects-heading">Pinned Projects</h2>
             <div class="projects-grid" id="projects-grid"></div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" aria-labelledby="about-heading">
         <div class="container">
             <h2 class="section-title" id="about-title">About</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="" alt="About" id="about-img">
+                    <img src="https://avatars.githubusercontent.com/u/124746990?v=4" alt="Zak - Computer Science graduate and AI researcher" id="about-img" width="300" height="300">
                 </div>
                 <div class="about-text">
-                    <p id="about-description"></p>
+                    <p id="about-description">I am a Computer Science graduate and AI researcher with extensive hands‑on experience as an AI Engineer, Data Scientist, Full‑Stack Developer, and Software Engineer. I specialize in developing production‑grade AI solutions, scalable web applications, IoT systems, and visual computing tools.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section id="stats" class="section">
+    <section id="stats" class="section" aria-labelledby="stats-heading">
         <div class="container">
-            <h2 class="section-title">Stats</h2>
+            <h2 class="section-title" id="stats-heading">Stats</h2>
             <div class="stats-grid" id="stats-grid"></div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section" aria-labelledby="contact-heading">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
+            <h2 class="section-title" id="contact-heading">Contact</h2>
             <div class="contact-grid" id="contact-grid"></div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2026 Zak. All rights reserved.</p>
         </div>
