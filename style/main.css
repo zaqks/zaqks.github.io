@@ -319,9 +319,20 @@ a {
 
 /* ========== Projects Section ========== */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    column-count: 3;
+    column-gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .projects-grid {
+        column-count: 1;
+    }
 }
 
 .project-card {
@@ -330,6 +341,10 @@ a {
     overflow: hidden;
     transition: var(--transition);
     border: 1px solid var(--border-color);
+    break-inside: avoid;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
 }
 
 .project-card:hover {
@@ -575,10 +590,6 @@ a {
     .timeline-item::before {
         left: -1.5rem;
         transform: translateX(-6px);
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
     }
 
     .about-content {

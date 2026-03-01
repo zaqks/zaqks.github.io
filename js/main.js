@@ -189,7 +189,7 @@ async function loadProjectsSection() {
         
         const imageHtml = project.img ? 
             `<div class="project-image">
-                <img src="${project.img}" alt="${project.title}">
+                <img src="${project.img}" alt="${project.title}" loading="lazy">
             </div>` : '';
         
         const linkHtml = project.url ? 
