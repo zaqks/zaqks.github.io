@@ -1,5 +1,2 @@
-field,value
-name,"Zak"
-image,"assets/images/pfp.jpeg"
-resume_link,"assets/docs/resume.pdf"
-github_repos,"https://github.com/zaqks?tab=repositories"
+name,image,resume_link,github_repos
+"Zak","assets/images/pfp.jpeg","assets/docs/resume.pdf","https://github.com/zaqks"

@@ -530,6 +530,12 @@ a {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-image {
+        order: -1;
     }
 
     .home-greeting {
