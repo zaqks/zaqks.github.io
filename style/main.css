@@ -1,21 +1,88 @@
- body {
-     padding: 0 10vw;
- }
+body {
+    padding: 0 10vw;
+}
 
- .page_section {
-     margin: 0 auto;
-     max-width: 1000px;
+.page_section {
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    padding: var(--sz10) 0;
+    gap: var(--sz10);
+    justify-content: center;
+}
 
-     min-height: 100vh;
-     padding: var(--sz19) 0;
+.page_section > .section_title > * {
+    margin: auto;
+    font-size: var(--sz7);
+    margin-bottom: var(--sz5);
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent0), var(--accent1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
-     gap: var(--sz10);
-     justify-content: center;
- }
+/* Global Link Styles */
+a {
+    color: var(--accent0);
+    text-decoration: none;
+    transition: all var(--transition);
+    position: relative;
+}
 
+a:hover {
+    color: var(--accent1);
+}
 
- .page_section>.section_title>* {
-     margin: auto;
-     font-size: var(--sz7);
-     margin-bottom: var(--sz4);
- }
+/* Button Styles */
+button, .button, #buttons a {
+    background: linear-gradient(135deg, var(--accent0), var(--accent1));
+    color: var(--bg1);
+    border: none;
+    padding: var(--sz3) var(--sz5);
+    border-radius: var(--radius-md);
+    font-size: var(--sz3);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: 0 4px 15px var(--shadow);
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .button:hover, #buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow-strong);
+}
+
+button:active, .button:active, #buttons a:active {
+    transform: translateY(0);
+}
+
+/* Card Styles */
+.section.borders {
+    background: var(--bg0);
+    padding: var(--sz4);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all var(--transition);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section.borders:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent0);
+    box-shadow: 0 8px 25px var(--shadow);
+}
+
+.section.borders.clr {
+    border: 1px solid var(--accent0);
+    box-shadow: 0 0 20px var(--shadow);
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+}

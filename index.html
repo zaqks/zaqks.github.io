@@ -4,8 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ELADJ Salim Zakaria</title>
-  <!-- <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" /> -->
+  
+  <!-- SEO Meta Tags -->
+  <title>Zak ELADJ - AI Engineer & Full-Stack Developer | Portfolio</title>
+  <meta name="description" content="Zak ELADJ (Salim Zakaria) - AI Engineer, Visual Computing Expert, and Full-Stack Developer. Specializing in machine learning, web development, mobile apps, and software engineering solutions." />
+  <meta name="keywords" content="AI Engineer, Full-Stack Developer, Machine Learning, Visual Computing, Web Development, Mobile Development, Software Engineer, Data Analytics, Django, React, Flutter, PyTorch, TensorFlow" />
+  <meta name="author" content="ELADJ Salim Zakaria" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zaqks.github.io/" />
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Zak ELADJ - AI Engineer & Full-Stack Developer" />
+  <meta property="og:description" content="AI Engineer specializing in machine learning, visual computing, and full-stack development. Check out my portfolio and projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://zaqks.github.io/" />
+  <meta property="og:image" content="https://zaqks.github.io/assets/images/pfp.jpeg" />
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Zak ELADJ - AI Engineer & Full-Stack Developer" />
+  <meta name="twitter:description" content="AI Engineer specializing in machine learning, visual computing, and full-stack development." />
+  <meta name="twitter:image" content="https://zaqks.github.io/assets/images/pfp.jpeg" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.png" />
 
   <meta name="google-site-verification" content="baBOoIKoS0s67zwfD9dPLE_jPplnVwqUse3ZzZSDEUI" />
   <!-- Google tag (gtag.js) -->
@@ -65,26 +87,20 @@
   <!-- HOME -->
   <div class="section page_section" id="home">
     <div class="section_content">
-      <img src="assets/images/pfp.jpeg" alt="">
+      <img id="home_image" src="" alt="Profile picture">
       <div class="section">
         <div class="section_title">
-          <h1>Hey, I'm Zak</h1>
+          <h1 id="home_name"></h1>
         </div>
-        <div class="section_content">
-          <p>AI & Visual Computing Engineer</p>
-          <p>Fullstack Developer</p>
-          <p>Freelancer</p>
+        <div class="section_content" id="home_titles"></div>
 
-          <div id="buttons">
-            <a href="assets/docs/resume.pdf">See My Resume</a>
-            <!-- <a href="#projects" id="down">▼</a> -->
-          </div>
-
+        <div id="buttons">
+          <a id="resume_link" href="">See My Resume</a>
         </div>
-
       </div>
     </div>
   </div>
+  <script src="js/page_sections/home.js"></script>
 
   <!-- SERVICES -->
   <div class="section page_section" id="srv">
@@ -107,15 +123,11 @@
   <!-- PROJECTS -->
   <div class="section page_section" id="projects">
     <div class="section_title">
-      <h2>
-        Pinned Projects
-      </h2>
-      <a href="https://github.com/zaqks?tab=repositories">See More</a>
+      <h2>Pinned Projects</h2>
+      <a id="github_repos_link" href="">See More</a>
     </div>
 
-    <div class="section_content grid3" id="project_cards">
-
-    </div>
+    <div class="section_content grid3" id="project_cards"></div>
     <script src="js/page_sections/projects.js"></script>
   </div>
 
@@ -123,35 +135,21 @@
   <div class="section page_section" id="about">
     <div class="section_content">
       <div class="section">
-        <img src="assets/gif/johnwick.gif" alt="">
+        <img id="about_image" src="" alt="About">
         <div class="section_title">
-          <h2>Who Am I?</h2>
+          <h2 id="about_title"></h2>
         </div>
         <div class="section_content">
-          <p>I am a dedicated and versatile professional specializing in artificial intelligence engineering, visual
-            computing, full-stack development, and software engineering. I actively work in these fields, contributing
-            to innovative projects and conducting research focused on deep learning and visual computing. With a
-            strong
-            academic foundation in computer science and hands-on experience in cutting-edge technologies, I aim to
-            tackle complex challenges and create impactful solutions. My work bridges the gap between machine learning
-            and human-centered design, combining technical expertise with creativity to drive advancements in
-            artificial
-            intelligence and software development.</p>
-
-
-
+          <p id="about_description"></p>
 
           <div class="section" id="stats_sect">
             <div class="section_content grid3" id="stat_cards"></div>
           </div>
-
-
-
-          <script src="js/page_sections/about.js"></script>
         </div>
       </div>
     </div>
   </div>
+  <script src="js/page_sections/about.js"></script>
 
   <!-- CONTACT -->
 

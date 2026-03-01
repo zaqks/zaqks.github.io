@@ -1,6 +1,6 @@
 const exp_cards = document.getElementById("exp_cards");
 const exp_card_template = `
-<div class="section exp_card">
+<div class="section exp_card borders">
   <div class="section_title">
     <h2>#title#</h2>    
   </div>
@@ -9,20 +9,13 @@ const exp_card_template = `
     <h2 class="time">#time#</h2>   
   </div>
 </div>`;
-//////////////////////////////////////////////////////////
 
 fetchCsv("data/experience.csv").then(function (json) {
-  var content;
-  //
-  for (let project of json) {
-    content = exp_card_template;
-    //replace
-    for (let tkn of ["time", "title", "desc"]) {
-      content = content.replace(`#${tkn}#`, project[tkn] || '');
+  json.forEach(exp => {
+    let content = exp_card_template;
+    for (let key of ["time", "title", "desc"]) {
+      content = content.replace(`#${key}#`, exp[key] || '');
     }
-    //append
     exp_cards.innerHTML += content;
-    console.log(content);
-    
-  }
+  });
 });
