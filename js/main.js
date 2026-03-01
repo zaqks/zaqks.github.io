@@ -133,25 +133,10 @@ async function loadHomeSection() {
         githubBtn.href = home.github_repos || '#';
     }
     
-    // Animated titles
-    if (titlesData.length > 0) {
-        const titles = titlesData.map(row => row.titles).filter(Boolean);
-        if (titles.length > 0) {
-            const titleElement = document.getElementById('home-title');
-            let currentIndex = 0;
-            
-            function changeTitle() {
-                titleElement.style.opacity = '0';
-                setTimeout(() => {
-                    titleElement.textContent = titles[currentIndex];
-                    titleElement.style.opacity = '1';
-                    currentIndex = (currentIndex + 1) % titles.length;
-                }, 300);
-            }
-            
-            changeTitle();
-            setInterval(changeTitle, 3000);
-        }
+    // Display titles
+    if (titlesData.length > 0 && titlesData[0].titles) {
+        const titleElement = document.getElementById('home-title');
+        titleElement.textContent = titlesData[0].titles;
     }
 }
 
