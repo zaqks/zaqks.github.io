@@ -4,36 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio</title>
     <meta name="title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
-    <meta name="description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing. Expert in deep learning, full-stack development, and real-time AI deployment.">
-    <meta name="keywords" content="AI Engineer, Data Scientist, Full-Stack Developer, Machine Learning, Deep Learning, Computer Science, Software Engineer, IoT, Web Development, Python, AI Research">
+    <meta name="description"
+        content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing. Expert in deep learning, full-stack development, and real-time AI deployment.">
+    <meta name="keywords"
+        content="AI Engineer, Data Scientist, Full-Stack Developer, Machine Learning, Deep Learning, Computer Science, Software Engineer, IoT, Web Development, Python, AI Research">
     <meta name="author" content="Zak">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zaqks.github.io/">
     <meta property="og:title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
-    <meta property="og:description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
+    <meta property="og:description"
+        content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
     <meta property="og:image" content="https://zaqks.github.io/assets/images/pfp.jpeg">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://zaqks.github.io/">
     <meta property="twitter:title" content="Zak - AI Engineer, Data Scientist & Full-Stack Developer Portfolio">
-    <meta property="twitter:description" content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
+    <meta property="twitter:description"
+        content="Computer Science graduate and AI researcher specializing in production-grade AI solutions, scalable web applications, IoT systems, and visual computing.">
     <meta property="twitter:image" content="https://zaqks.github.io/assets/images/pfp.jpeg">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://zaqks.github.io/">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    
+
     <link rel="stylesheet" href="style/main.css">
 
     <!-- Structured Data (JSON-LD) -->
@@ -95,12 +99,21 @@
                     <h1 class="home-greeting">Hi, I'm <span class="highlight" id="home-name">Zak</span></h1>
                     <p class="home-title" id="home-title">AI Engineer | Data Scientist | Full-Stack Developer</p>
                     <div class="home-actions">
-                        <a href="assets/docs/resume.pdf" class="btn btn-primary" id="resume-btn" aria-label="View Zak's resume">View Resume</a>
-                        <a href="https://github.com/zaqks" class="btn btn-secondary" id="github-btn" aria-label="Visit Zak's GitHub profile" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="assets/docs/resume.pdf" class="btn btn-primary" id="resume-btn"
+                            aria-label="View Zak's resume" onclick=onclick="gtag('event', 'resume_download', {
+     'event_category': 'engagement',
+     'event_label': 'resume_pdf'
+   });">View Resume</a>
+                        <a href="https://github.com/zaqks" class="btn btn-secondary" id="github-btn"
+                            aria-label="Visit Zak's GitHub profile" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'github_click', {
+     'event_category': 'engagement',
+     'event_label': 'github_profile'
+   });">GitHub</a>
                     </div>
                 </div>
                 <div class="home-image">
-                    <img src="assets/images/pfp.jpeg" alt="Zak - AI Engineer and Full-Stack Developer profile picture" id="profile-img" width="400" height="400">
+                    <img src="assets/images/pfp.jpeg" alt="Zak - AI Engineer and Full-Stack Developer profile picture"
+                        id="profile-img" width="400" height="400">
                 </div>
             </div>
         </div>
@@ -136,10 +149,14 @@
             <h2 class="section-title" id="about-title">About</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://avatars.githubusercontent.com/u/124746990?v=4" alt="Zak - Computer Science graduate and AI researcher" id="about-img" width="300" height="300">
+                    <img src="https://avatars.githubusercontent.com/u/124746990?v=4"
+                        alt="Zak - Computer Science graduate and AI researcher" id="about-img" width="300" height="300">
                 </div>
                 <div class="about-text">
-                    <p id="about-description">I am a Computer Science graduate and AI researcher with extensive hands‑on experience as an AI Engineer, Data Scientist, Full‑Stack Developer, and Software Engineer. I specialize in developing production‑grade AI solutions, scalable web applications, IoT systems, and visual computing tools.</p>
+                    <p id="about-description">I am a Computer Science graduate and AI researcher with extensive hands‑on
+                        experience as an AI Engineer, Data Scientist, Full‑Stack Developer, and Software Engineer. I
+                        specialize in developing production‑grade AI solutions, scalable web applications, IoT systems,
+                        and visual computing tools.</p>
                 </div>
             </div>
         </div>
