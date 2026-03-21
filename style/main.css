@@ -12,6 +12,18 @@
     --transition: all 0.3s ease;
 }
 
+[data-theme="dark"] {
+    --primary-color: #60a5fa;
+    --secondary-color: #0b1221;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --bg-primary: #0f172a;
+    --bg-secondary: #111827;
+    --border-color: #1f2937;
+    --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    --shadow-lg: 0 10px 20px -5px rgba(0, 0, 0, 0.45), 0 8px 12px -6px rgba(0, 0, 0, 0.3);
+}
+
 /* ========== Reset & Base Styles ========== */
 * {
     margin: 0;
@@ -29,6 +41,7 @@ body {
     line-height: 1.6;
     color: var(--text-primary);
     background: var(--bg-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -65,9 +78,9 @@ a {
     margin: 0 auto;
     padding: 1rem 1.5rem;
     display: flex;
-    /* justify-content: space-between; */
     justify-content: end;
     align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo {
@@ -124,6 +137,29 @@ a {
     height: 2px;
     background: var(--text-primary);
     transition: var(--transition);
+}
+
+.theme-toggle {
+    margin-left: 0.5rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 9999px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.theme-toggle:hover {
+    background: var(--bg-primary);
+    color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.theme-toggle:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 /* ========== Sections ========== */

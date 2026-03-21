@@ -1,5 +1,63 @@
 // ========== Utility Functions ==========
 
+const THEME_KEY = 'preferred-theme';
+
+/**
+ * Apply and persist the selected theme
+ */
+function setTheme(theme) {
+    const normalized = theme === 'dark' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', normalized);
+    localStorage.setItem(THEME_KEY, normalized);
+
+    const toggle = document.querySelector('.theme-toggle');
+    if (toggle) {
+        toggle.setAttribute('aria-pressed', normalized === 'dark' ? 'true' : 'false');
+        const label = toggle.querySelector('.theme-toggle__label');
+        if (label) {
+            label.textContent = normalized === 'dark' ? 'Light' : 'Dark';
+        }
+    }
+}
+
+/**
+ * Get the user's preferred theme (saved or system)
+ */
+function getPreferredTheme() {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored === 'light' || stored === 'dark') {
+        return stored;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+/**
+ * Initialize theme toggle and sync with system preference
+ */
+function initThemeToggle() {
+    const toggle = document.querySelector('.theme-toggle');
+
+    // Always set theme on load
+    setTheme(getPreferredTheme());
+
+    if (!toggle) return;
+
+    toggle.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        setTheme(current);
+    });
+
+    // Respect system preference if user has not chosen
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemChange = (event) => {
+        const stored = localStorage.getItem(THEME_KEY);
+        if (!stored) {
+            setTheme(event.matches ? 'dark' : 'light');
+        }
+    };
+    mediaQuery.addEventListener('change', handleSystemChange);
+}
+
 /**
  * Parse CSV data into an array of objects
  */
@@ -306,6 +364,7 @@ async function loadContactSection() {
 async function init() {
     // Initialize navigation
     initNavigation();
+    initThemeToggle();
     
     // Load all sections
     await Promise.all([
